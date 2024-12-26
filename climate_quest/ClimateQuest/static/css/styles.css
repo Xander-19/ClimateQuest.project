@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Revolution&family=Sevillana&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.navbar .nav-link {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  transition: all 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #ffdd57;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  text-shadow: 0 1px 3px #ffdd57;
+}
+
+.logo {
+  color: rgb(0, 137, 23);
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  font-style: normal;
+}
+.btnSearch {
+  background: transparent;
+  border: 2px solid #ffdd57;
+  border-radius: 8px;
+  color: white;
+  transition: all 0.3s;
+}
+.btnSearch:hover {
+  background-color: #ffdd57;
+  color: #000000;
+  font-weight: 600;
+}
+nav {
+  box-shadow: 0 1px 10px #000000;
+}
+.gradient {
+  display: grid;
+  place-items: center;
+  box-shadow: 0px 0px 20px #414141;
+  height: auto;
+  background: linear-gradient(60deg, #A7B5FF, #FFA2B6, #4B96FF);
+  background-size: 500%;
+  margin-top: 4.2rem;
+  padding: 3rem 3rem;
+  animation: bgAnimation 15s infinite;
+}
+
+@keyframes bgAnimation {
+  0% {
+    background-position: 0 85%;
+  }
+  50% {
+    background-position: 100% 20%;
+  }
+  100% {
+    background-position: 0 85%;
+  }
+}
+/* TEXT/PARAGRAPH */
+.gradient p {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.gradient h1 {
+  font-family: "Spectral", serif;
+  font-weight: 800;
+  font-style: normal;
+  color: white;
+}
+.container-sm h2 {
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.container-sm p {
+  font-family: "Poppins", sans-serif;
+}
+
+.homeCard {
+  transition: .3s all;
+  margin-bottom: 1rem;
+}
+.homeCard:hover {
+  transform: scale(1.1);
+}
+.hCard {
+  height: 100%;
+  padding-bottom: 2rem;
+}
+
+.homeCard h3 {
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+.homeCard p {
+  font-family: "Poppins", sans-serif;
+  height: 70%;
+}
+.pros h2 {
+  font-family: "Spectral", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.pros p {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* GAMES */
+.game {
+  z-index: 99999;
+}
+/* FOOTER */
+.footer {
+  width: 100%;
+}
+.foot h1 {
+  color: rgb(0, 137, 23);
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2em;
+  font-weight: 800;
+  font-style: normal;
+}
+/* CONTENT HOME */
+.content {
+  width: 80%;
+}
+/* ABOUT */
+.aboutImg {
+  box-shadow: 0px 0px 8px #888;
+  overflow: hidden;
+}
+.aboutImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 800;
+}
+.aboutImg:hover img {
+  transform: scale(1.5);
+}
+
+/* ARTICLE Card */
+.articleCard {
+  height: 100%;
+  width: 100%;
+  transition: .3s all;
+}
+.articleCard:hover {
+  transform: scale(1.1);
+}
+.artDetImg {
+  box-shadow: 0px 0px 8px #888;
+  overflow: hidden;
+}
+.artDetImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 800;
+}
+.artDetImg:hover img {
+  transform: scale(1.8);
+}
+/* ACTIVITIES */
+.actCard {
+  transition: .3s all;
+}
+.actCard:hover {
+  transform: scale(1.1);
+}
+/* MULTIMEDIA */
+.multiMedia h2 {
+  font-family: "Protest Revolution", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.multiMedia p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* GAME */
+.pgame {
+  background-color: #D12531;
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.game {
+  animation: waviy 5s infinite;
+}
+@keyframes waviy {
+  0% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+/* DEADPOOL */
+.bgdeadpool {
+  background-color: #D12531;
+  box-shadow: 2px 2px 1px 8px #404040;
+}
+.deadpool {
+  width: 30vw;
+  height: auto;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+@media (max-width: 768px) {
+  .deadpool {
+      width: 50vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .deadpool {
+      width: 70vw;
+  }
+}
+.deadpool1 {
+  width: 40vw;
+  height: auto;
+  max-width: 50%;
+  max-height: 50%;
+}
+/* CAROUSEL */
+.carouselExampleDark {
+  background-color: #D12531;
+  box-shadow: 2px 2px 1px 8px #404040;
+}
+.carouselExampleDark h2 {
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+}
+.carouselExampleDark p {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.carousel-inner img {
+  object-fit: cover;  /* Maintains the aspect ratio and covers the space */
+  height: 100%;       /* Image fills its container */
+  max-height: 400px;  /* Sets a reasonable limit for larger screens */
+}
+
+@media (max-width: 768px) {
+  .carousel-inner img {
+      max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-inner img {
+      max-height: 200px;
+  }
+}

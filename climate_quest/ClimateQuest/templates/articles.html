@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Articles Page {% endblock %}
+
+{% block content %}
+<div class="content">
+
+    <div class="gif-container position-fixed bottom-0 start-0 z-3">
+        <img src="{% static 'images/deadpool11.gif' %}" alt="deadpool" class="deadpool">
+    </div>
+
+    <div class="container-fluid gradient text-center rounded-bottom-2" data-aos="fade-in" data-aos-duration="1500">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-4">Articles</h1>
+                <p class="lead">
+                    Your guide to a sustainable future on Climate Science!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bgdeadpool my-4 p-4 rounded-5" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400">
+        <div class="row">
+            {% for article in articles %}
+                <div class="col-md-4 mt-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="articleCard shadow card">
+                        <img src="{{ article.image.url }}" class="card-img-top" alt="{{ article.title }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ article.title }}</h5>
+                            <p>{{ article.content|truncatewords:20 }}</p>
+                            <a href="{{ article.get_absolute_url }}" class="btn btn-outline-info">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="row text-center bgdeadpool m-0 my-3 pt-4 rounded-5" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400">
+
+        <div class="container-sm d-flex flex-column text-white w-75">
+            <h2>Join Us in Making a Difference</h2>
+            <p>Start your journey with ClimateQuest today by exploring our articles, activities, and multimedia content. Together, we can help protect the Earth and build a sustainable future for generations to come.</p>
+        </div>
+
+        <div class="col-md-4 homeCard">
+            <div class="card hCard shadow">
+                <div class="card-body">
+                    <h3 class="card-title">Engage</h3>
+                    <p class="card-text">Get involved with interactive, hands-on activities designed to help you better understand the planet and the impact of climate change. From experiments and DIY projects to community initiatives, these experiences empower you to make a difference while learning practical ways to protect our environment.</p>
+                    <a href="{% url 'activities' %}" class="btn btn-outline-success btn-lg mx-2 w-75">Fun Activities</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 homeCard">
+            <div class="card hCard shadow">
+                <div class="card-body">
+                    <h3 class="card-title">Explore</h3>
+                    <p class="card-text">Discover captivating multimedia content that brings climate topics to life. From stunning visuals and engaging videos to interactive tools and infographics, explore the beauty of our planet while gaining a deeper appreciation for the challenges it faces and the solutions we can pursue.</p>
+                    <a href="{% url 'multimedia' %}" class="btn btn-outline-warning btn-lg mx-2 w-75">Multimedia</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}

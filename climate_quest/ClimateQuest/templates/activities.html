@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title%} Activities Page {% endblock %}
+
+{% block content %}
+<div class="content">
+
+    <div class="container-fluid gradient text-center rounded-bottom-2" data-aos="fade-in" data-aos-duration="1500">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-4">Activities</h1>
+                <p class="lead">
+                    Fun and educational activities to learn about climate change!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row p-4 bgdeadpool my-4 rounded-5 m-0" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400">
+        <!-- Activity 1 -->
+        <div class="col-md-4 p-3">
+            <div class="card h-100 actCard shadow">
+                <img src="{% static 'images/activities1.jpg' %}" class="card-img-top" alt="Activity 2">
+                <div class="card-body">
+                    <h5 class="card-title mt-4">Climate Change Quiz</h5>
+                    <p class="card-text">Download and print this Climate Change Quiz to learn climate-related terms.</p>
+                    <a href="{% static 'activities/ccQuiz.pdf' %}" class="btn btn-outline-primary" download>Download</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Activity 2 -->
+        <div class="col-md-4 p-3">
+            <div class="card h-100 actCard shadow">
+                <img src="{% static 'images/activities2.jpg' %}" class="card-img-top" alt="Activity 2">
+                <div class="card-body">
+                    <h5 class="card-title">Climate Change Word Search</h5>
+                    <p class="card-text">Download and print this fun word search activity to learn climate-related terms.</p>
+                    <a href="{% static 'activities/climateWordSearch.pdf' %}" class="btn btn-outline-primary" download>Download</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity 3 -->
+        <div class="col-md-4 p-3">
+            <div class="card h-100 actCard shadow">
+                <img src="{% static 'images/activities3.jpg' %}" class="card-img-top" alt="Activity 3">
+                <div class="card-body">
+                    <h5 class="card-title">Build Your Carbon Footprint Tracker</h5>
+                    <p class="card-text">Track your daily habits and learn how to reduce your carbon footprint.</p>
+                    <a href="{% static 'activities/carbon_footprint.pdf' %}" class="btn btn-outline-primary" download>Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center bgdeadpool m-0 my-3 pt-4 rounded-5" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400">
+
+        <div class="container-sm d-flex flex-column text-white w-75">
+            <h2>Join Us in Making a Difference</h2>
+            <p>Start your journey with ClimateQuest today by exploring our articles, activities, and multimedia content. Together, we can help protect the Earth and build a sustainable future for generations to come.</p>
+        </div>
+
+        <div class="col-md-4 homeCard">
+            <div class="card hCard shadow">
+                <div class="card-body">
+                    <h3 class="card-title">Learn</h3>
+                    <p class="card-text">Stay informed with the latest articles and resources on climate change, exploring its causes, effects, and the ways it impacts our world. Through reliable information and insights, deepen your understanding of the challenges our planet faces and discover the role we all play in creating a sustainable future.</p>
+                    <a href="{% url 'articles' %}" class="btn btn-outline-primary btn-lg mx-2 w-75">Explore Articles</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 homeCard">
+            <div class="card hCard shadow">
+                <div class="card-body">
+                    <h3 class="card-title">Explore</h3>
+                    <p class="card-text">Discover captivating multimedia content that brings climate topics to life. From stunning visuals and engaging videos to interactive tools and infographics, explore the beauty of our planet while gaining a deeper appreciation for the challenges it faces and the solutions we can pursue.</p>
+                    <a href="{% url 'multimedia' %}" class="btn btn-outline-warning btn-lg mx-2 w-75">Multimedia</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+{% endblock %}

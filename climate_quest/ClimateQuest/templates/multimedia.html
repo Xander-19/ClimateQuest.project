@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Multimedia Page {% endblock %}
+
+{% block content %}
+<style>
+    .video {
+        background-color: bisque;
+    }
+</style>
+
+<div class="content">
+
+    <div class="container-fluid gradient text-center rounded-bottom-2" data-aos="fade-in" data-aos-duration="1500">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-4">Explore Climate Change Through Multimedia</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bgdeadpool my-4 py-5 rounded-5" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400">
+    
+        <section class="mb-5">
+
+            <div class="multiMedia d-flex flex-column align-items-center text-white">
+                <h2>Images</h2>
+                <p class="w-75 text-center">"A picture is worth a thousand words—immerse yourself in powerful images that showcase the beauty of our planet and the impact of climate change on ecosystems, communities, and wildlife."</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="{% static 'images/climate1.jpg' %}" class="img-fluid rounded shadow mt-2" alt="Environmental Polution" data-aos="fade-left" data-aos-duration="1000">
+                </div>
+                <div class="col-md-4">
+                    <img src="{% static 'images/climate2.jpg' %}" class="img-fluid rounded shadow mt-2" alt="Hurricane Storm 2" data-aos="fade-left" data-aos-duration="1000">
+                </div>
+                <div class="col-md-4">
+                    <img src="{% static 'images/climate3.jpg' %}" class="img-fluid rounded shadow mt-2" alt="Climate Image 3" data-aos="fade-left" data-aos-duration="1000">
+                </div>
+            </div>
+        </section>
+
+        <section class="">
+
+            <div class="multiMedia d-flex flex-column align-items-center text-white">
+                <h2>Videos</h2>
+                <p class="w-75 text-center">"Dive into compelling videos that bring climate change to life—explore stories, expert insights, and real-world examples of how climate action can make a difference."</p>
+            </div>
+
+            <div class="section2 d-flex justify-content-center flex-wrap gap-4">
+                <div class="video col-md-5 p-3 rounded-top-2 rounded-bottom-4 shadow" data-aos="fade-in" data-aos-duration="1000">
+                    <iframe width="100%" height="295" src="https://www.youtube.com/embed/YhchyYCMLuY?si=Hu1TiqIGy8ZpWFA1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="titleViews">
+                        <h4>The Science Behind Climate Change</h4>
+                        <p>2.9K views 1 year ago</p>
+                    </div>
+                </div>
+                <div class="video col-md-5 p-3 rounded-top-2 rounded-bottom-4 shadow" data-aos="fade-in" data-aos-duration="1000">
+                    <iframe width="100%" height="295" src="https://www.youtube.com/embed/G4H1N_yXBiA?si=MqAmAkmonyjnI9w9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="titleViews">
+                        <h4>Impacts of Climate Change on Ecosystems</h4>
+                        <p>5.2M views 7 year ago</p>
+                    </div>
+                </div>
+                <div class="video col-md-5 p-3 rounded-top-2 rounded-bottom-4 shadow" data-aos="fade-in" data-aos-duration="1000">
+                    <iframe width="100%" height="295" src="https://www.youtube.com/embed/T7fRYQeOS18?si=YYSoe6b0mInmcZKB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="titleViews">
+                        <h4>Understanding How Climate Change Impacts Human Health</h4>
+                        <p>18k views 1 year ago</p>
+                    </div>
+                </div>
+                <div class="video col-md-5 p-3 rounded-top-2 rounded-bottom-4 shadow" data-aos="fade-in" data-aos-duration="1000">
+                    <iframe width="100%" height="295" src="https://www.youtube.com/embed/1kUE0BZtTRc?si=0_1j4wS-r_jswts1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="titleViews">
+                        <h4>Renewable Energy 101 | National Geographic</h4>
+                        <p>2.2M views 7 year ago</p>
+                    </div>
+                </div>
+                <div class="video col-md-5 p-3 rounded-top-2 rounded-bottom-4 shadow" data-aos="fade-in" data-aos-duration="1000">
+                    <iframe width="100%" height="295" src="https://www.youtube.com/embed/5THr3bFj8Z4?si=RRP2Xzi8m1E9sZgP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="titleViews">
+                        <h4>What is the 'Paris Agreement', and how does it work?</h4>
+                        <p>201k views 3 year ago</p>
+                    </div>
+                </div>
+                <div class="video col-md-5 p-3 rounded-top-2 mx-0 rounded-bottom-4 shadow" data-aos="fade-in" data-aos-duration="1000">
+                    <iframe width="100%" height="295" src="https://www.youtube.com/embed/99VrWNJyJ3E?si=ykiYLRYh5sJ8xX_h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="titleViews">
+                        <h4>What is SUSTAINABILITY? Explained By An Expert</h4>
+                        <p>98k views 3 year ago</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="container bgdeadpool text-center p-4 rounded-5 my-2" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400">
+        <div class="row">
+            <div class="col-md-6 pros d-flex align-items-center flex-column justify-content-center text-white">
+                <h2>The Greenhouse Effect</h2>
+                <p>The greenhouse effect is a natural process that warms the Earth’s surface. When the Sun’s energy reaches the Earth, some of it is absorbed and re-emitted as heat. Greenhouse gases, such as carbon dioxide (CO₂), methane (CH₄), and water vapor (H₂O), trap this heat in the atmosphere, preventing it from escaping into space. This process keeps the Earth’s temperature stable and supports life. However, human activities like burning fossil fuels, deforestation, and industrial processes have increased the concentration of greenhouse gases, intensifying the greenhouse effect and leading to global warming. This enhanced greenhouse effect is a major driver of climate change, resulting in rising temperatures, extreme weather events, and shifting ecosystems.</p>
+            </div>
+            <div class="col-md-6 aboutImg p-0 rounded-5" data-aos="fade-left" data-aos-duration="1000">
+                <img src="{% static 'images/greenhouse.jpg' %}" class="img-fluid rounded-5 aboutimg" alt="Climate Mission">
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center bgdeadpool m-0 my-3 pt-4 rounded-5" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400">
+
+        <div class="container-sm d-flex flex-column text-white w-75">
+            <h2>Join Us in Making a Difference</h2>
+            <p>Start your journey with ClimateQuest today by exploring our articles, activities, and multimedia content. Together, we can help protect the Earth and build a sustainable future for generations to come.</p>
+        </div>
+
+        <div class="col-md-4 homeCard">
+            <div class="card hCard shadow">
+                <div class="card-body">
+                    <h3 class="card-title">Learn</h3>
+                    <p class="card-text">Stay informed with the latest articles and resources on climate change, exploring its causes, effects, and the ways it impacts our world. Through reliable information and insights, deepen your understanding of the challenges our planet faces and discover the role we all play in creating a sustainable future.</p>
+                    <a href="{% url 'articles' %}" class="btn btn-outline-primary btn-lg mx-2 w-75">Explore Articles</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 homeCard">
+            <div class="card hCard shadow">
+                <div class="card-body">
+                    <h3 class="card-title">Engage</h3>
+                    <p class="card-text">Get involved with interactive, hands-on activities designed to help you better understand the planet and the impact of climate change. From experiments and DIY projects to community initiatives, these experiences empower you to make a difference while learning practical ways to protect our environment.</p>
+                    <a href="{% url 'activities' %}" class="btn btn-outline-success btn-lg mx-2 w-75">Fun Activities</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

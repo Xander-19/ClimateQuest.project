@@ -1,0 +1,105 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title%} Home Page {% endblock %}
+
+{% block content %}
+
+    <div class="content">
+
+        <div class="gif-container position-fixed bottom-0 start-0 z-3">
+            <img src="{% static 'images/deadpool.gif' %}" alt="deadpool" class="deadpool">
+        </div>
+        
+        <div class="container-fluid gradient text-center rounded-bottom-2" data-aos="fade-in" data-aos-duration="1500">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="display-4">Welcome to ClimateQuest!</h1>
+                    <p class="lead">
+                        Discover the wonders of our planet, learn about climate change, and explore ways we can protect Earth for future generations. Climate Quest is your gateway to understanding and taking action!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-4 carouselExampleDark my-4 rounded-5">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-md-4 text-center">
+                    <h2>Hero of the Earth</h2>
+                    <p class="m-0 p-0 text-white">"The world will not be destroyed by those who do evil, but by those who watch them without doing anything".</p>
+                    <p class="m-0 p-0 pb-4 text-white">-Albert Einstein</p>
+                </div>
+                <div class="col-12 col-md-8 p-2 rounded-4 bg-light">
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="{% static 'images/hero3.jpg' %}" class="d-block w-100 rounded-4" alt="Hero 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'images/hero1.jpg' %}" class="d-block w-100 rounded-4" alt="Hero 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="{% static 'images/hero2.jpg' %}" class="d-block w-100 rounded-4" alt="Hero 2">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    
+    
+        <div class="row text-center bgdeadpool m-0 my-3 pt-4 rounded-5" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="400">
+
+            <div class="container-sm d-flex flex-column text-white w-75">
+                <h2>Join Us in Making a Difference</h2>
+                <p>Start your journey with ClimateQuest today by exploring our articles, activities, and multimedia content. Together, we can help protect the Earth and build a sustainable future for generations to come.</p>
+            </div>
+
+            <div class="col-md-4 homeCard">
+                <div class="card hCard shadow">
+                    <div class="card-body">
+                        <h3 class="card-title">Learn</h3>
+                        <p class="card-text">Stay informed with the latest articles and resources on climate change, exploring its causes, effects, and the ways it impacts our world. Through reliable information and insights, deepen your understanding of the challenges our planet faces and discover the role we all play in creating a sustainable future.</p>
+                        <a href="{% url 'articles' %}" class="btn btn-outline-primary btn-lg mx-2 w-75">Explore Articles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 homeCard">
+                <div class="card hCard shadow">
+                    <div class="card-body">
+                        <h3 class="card-title">Engage</h3>
+                        <p class="card-text">Get involved with interactive, hands-on activities designed to help you better understand the planet and the impact of climate change. From experiments and DIY projects to community initiatives, these experiences empower you to make a difference while learning practical ways to protect our environment.</p>
+                        <a href="{% url 'activities' %}" class="btn btn-outline-success btn-lg mx-2 w-75">Fun Activities</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 homeCard">
+                <div class="card hCard shadow">
+                    <div class="card-body">
+                        <h3 class="card-title">Explore</h3>
+                        <p class="card-text">Discover captivating multimedia content that brings climate topics to life. From stunning visuals and engaging videos to interactive tools and infographics, explore the beauty of our planet while gaining a deeper appreciation for the challenges it faces and the solutions we can pursue.</p>
+                        <a href="{% url 'multimedia' %}" class="btn btn-outline-warning btn-lg mx-2 w-75">Multimedia</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}
